@@ -1,0 +1,9 @@
+.bg-hero{
+   background-image: url(../../../public/images/hero2.jpg) ;
+   background-size: cover;
+   background-position: center;
+   color: white;
+   text-align: center;
+   padding: 50px;
+}
+
