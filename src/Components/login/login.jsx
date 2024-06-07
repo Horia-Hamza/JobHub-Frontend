@@ -8,7 +8,7 @@ import { UserContext } from "../context/userContext";
 
 export function LogIn() {
   const { jobId } = useParams(); // Use useParams hook to get the job ID
-console.log(jobId);
+ // console.log(jobId);
   const {setUserToken} = useContext(UserContext)
   const navigate = useNavigate();
   const [error, setError] = useState(null);

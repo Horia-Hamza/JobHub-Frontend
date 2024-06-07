@@ -1,20 +1,12 @@
 import { useEffect, useState } from "react";
 
 export const SidebarFilter = ({ onFilterChange }) => {
-//   const [selectedWorkPlace, setSelectedWorkPlace] = useState([]);
 const [selectedFilters, setSelectedFilters] = useState({
-  jobType: [],
-  careerLevel: [],
-  workPlace: []
+  hotels: [],
+  departments: [],
+  statues: []
 });
-//  const [filters, setFilters] = useState([
-//   {title: "workPlace", search:[]},  
-//   {title: "careerLevel", search:[]},
-//   // {title: "workPlace", search:[]},
-//   // {title: "workPlace", search:[]},
-//   // {title: "workPlace", search:[]},
-//   // {title: "workPlace", search:[]},
-//  ]);
+
  const handleCheckboxChange = (event) => {
    const { name, value, checked } = event.target;
 

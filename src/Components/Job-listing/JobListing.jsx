@@ -15,6 +15,7 @@ export function JobListing() {
   useEffect(()=>{
 console.log('parent',filterData);
   },[filterData])
+
   // Function to handle data received from child component
   const handleFilterChange = (data) => {
     setFilterData(data);
@@ -25,6 +26,7 @@ console.log('parent',filterData);
     // console.log(data);
     setJob(data.jobs);
   }
+  
   // component didMount call every render
   useEffect(() => {
     getJobs();
